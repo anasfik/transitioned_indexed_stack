@@ -36,7 +36,6 @@ class FadeIndexedStackState extends State<FadeIndexedStack>
     _controller = _createAnimationController();
     _tween = _createTween();
     _controller.forward();
-
     super.initState();
   }
 
