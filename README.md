@@ -14,6 +14,7 @@ This package aims to help you implement the `IndexedStack` widget for flutter, b
   - Size Factor Indexed Stack
   - Rotation Indexed Stack
   - Diagonal Indexed Stack
+  - Shake Indexed Stack
 
 All widgets offered by this package have the same properties as the pre-built Flutter `IndexedStack` widget, in addition of some useful properties which control the animations.
   
