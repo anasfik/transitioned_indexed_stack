@@ -13,7 +13,7 @@ This package aims to help you implement the `IndexedStack` widget for flutter, b
     - Slide Down IndexedStack
     - Slide Right IndexedStack
     - Slide Left IndexedStack
-  - Size Factor Inexed Stack
+  - Size Factor Indexed Stack
   - Rotation Indexed Stack
   - Diagonal Indexed Stack
 
@@ -114,11 +114,9 @@ placeholder
 | `duration` | The Animation duration ( need a hot restart to see changes ) | `Duration` |
 
 <br>
-You can also use the built-in `up`, `down`, `right`, `left` directions slide indexed stack:
-
+You can also use the built-in `up` , `down` , `right` , `left` directions slide indexed stack:
 - ### Slide Up IndexedStack
-      
-      SlideIndexedStack.up(
+        SlideIndexedStack.up(
         curve: Curves.easeInOut,
         duration: const Duration(milliseconds: 250),
         index: 1,
@@ -130,7 +128,7 @@ You can also use the built-in `up`, `down`, `right`, `left` directions slide ind
             child: Text("Child 2"),
           ),
         ],
-      ),
+      ), 
       
 - ### Slide Down IndexedStack
     
@@ -181,7 +179,7 @@ You can also use the built-in `up`, `down`, `right`, `left` directions slide ind
       ),
       
 
-## Size Factor Inexed Stack
+## Size Factor Indexed Stack
 placeholder
 ```dart
    SizeFactorIndexedStack(
@@ -211,7 +209,7 @@ placeholder
 | `duration` | The Animation duration ( need a hot restart to see changes ) | `Duration` |
 
 
-## Size Factor Inexed Stack
+## Size Factor Indexed Stack
 placeholder
 ```dart
   RotationIndexedStack(
@@ -241,7 +239,7 @@ placeholder
 | `curve` | The Animation Curve  | `Curve` |
 | `duration` | The Animation duration ( need a hot restart to see changes ) | `Duration` |
 
-## Size Factor Inexed Stack
+## Size Factor Indexed Stack
 placeholder
 
 ```dart
