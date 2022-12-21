@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class FadeIndexedStack extends StatefulWidget {
+  /// Creates An Indexed Stack with Fade Animation.
   const FadeIndexedStack({
     super.key,
     this.children = const [],
@@ -14,14 +15,31 @@ class FadeIndexedStack extends StatefulWidget {
     this.curve = Curves.easeInOut,
   });
 
-  final List<Widget> children;
+  /// the sizing of the children within the IndexedStack.
   final StackFit sizing;
+
+  /// The alignment of the children within the IndexedStack.
   final AlignmentGeometry alignment;
+
+  /// The text direction of the IndexedStack.
   final TextDirection? textDirection;
+
+  /// THe Children Of The IndexedStack
+  final List<Widget> children;
+
+  /// The index of the child to show.
   final int? index;
+
+  /// The animation duration.
   final Duration duration;
+
+  /// The Initial Fade Opacity Animation Value.
   final double beginOpacity;
+
+  /// The End Fade Opacity Animation Value
   final double endOpacity;
+
+  /// The Animation Curve
   final Curve curve;
   @override
   State<FadeIndexedStack> createState() => FadeIndexedStackState();

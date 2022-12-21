@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ScaleIndexedStack extends StatefulWidget {
+  /// Creates An Indexed Stack with Scale Animation.
   const ScaleIndexedStack({
     super.key,
     this.children = const [],
@@ -14,14 +15,31 @@ class ScaleIndexedStack extends StatefulWidget {
     this.curve = Curves.easeInOut,
   });
 
-  final List<Widget> children;
+  /// the sizing of the children within the IndexedStack.
   final StackFit sizing;
+
+  /// The alignment of the children within the IndexedStack.
   final AlignmentGeometry alignment;
+
+  /// The text direction of the IndexedStack.
   final TextDirection? textDirection;
+
+  /// THe Children Of The IndexedStack
+  final List<Widget> children;
+
+  /// The index of the child to show.
   final int? index;
+
+  /// The animation duration.
   final Duration duration;
+
+  /// The Initial Scale Animation Value
   final double beginScale;
+
+  /// The End Scale Animation Value
   final double endScale;
+
+  /// The Animation Curve
   final Curve curve;
   @override
   State<ScaleIndexedStack> createState() => ScaleIndexedStackState();

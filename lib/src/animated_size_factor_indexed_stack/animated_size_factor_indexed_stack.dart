@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class SizeFactorIndexedStack extends StatefulWidget {
+  /// Creates An Indexed Stack with Size Factor Animation.
   const SizeFactorIndexedStack({
     super.key,
     this.children = const [],
@@ -19,15 +20,33 @@ class SizeFactorIndexedStack extends StatefulWidget {
   final Axis axis;
   final double axisAlignment;
 
-  final List<Widget> children;
+  /// the sizing of the children within the IndexedStack.
   final StackFit sizing;
+
+  /// The alignment of the children within the IndexedStack.
   final AlignmentGeometry alignment;
+
+  /// The text direction of the IndexedStack.
   final TextDirection? textDirection;
+
+  /// THe Children Of The IndexedStack
+  final List<Widget> children;
+
+  /// The index of the child to show.
   final int? index;
+
+  /// The animation duration.
   final Duration duration;
+
+  /// The Initial Size Factor Animation Value
   final double beginSizeFactor;
+
+  /// The End Size Factor Animation Value
   final double endSizeFactor;
+
+  /// The Animation Curve
   final Curve curve;
+
   @override
   State<SizeFactorIndexedStack> createState() => SizeFactorIndexedStackState();
 }

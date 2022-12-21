@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class RotationIndexedStack extends StatefulWidget {
+  /// Creates An Indexed Stack with Rotation Animation.
   const RotationIndexedStack({
     super.key,
     this.children = const [],
@@ -14,15 +15,33 @@ class RotationIndexedStack extends StatefulWidget {
     this.curve = Curves.easeInOut,
   });
 
-  final List<Widget> children;
+  /// the sizing of the children within the IndexedStack.
   final StackFit sizing;
+
+  /// The alignment of the children within the IndexedStack.
   final AlignmentGeometry alignment;
+
+  /// The text direction of the IndexedStack.
   final TextDirection? textDirection;
+
+  /// THe Children Of The IndexedStack
+  final List<Widget> children;
+
+  /// The index of the child to show.
   final int? index;
+
+  /// The animation duration.
   final Duration duration;
+
+  /// The Initial Rotation Turn Animation Value.
   final double beginTurn;
+
+  /// The End Rotation Turn Animation Value.
   final double endTurn;
+
+  /// The Animation Curve
   final Curve curve;
+
   @override
   State<RotationIndexedStack> createState() => RotationIndexedStackState();
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class SlideIndexedStack extends StatefulWidget {
+  /// Creates An Indexed Stack with Customizable Slide Animation.
   const SlideIndexedStack({
     super.key,
     this.children = const [],
@@ -14,6 +15,7 @@ class SlideIndexedStack extends StatefulWidget {
     this.curve = Curves.easeInOut,
   });
 
+  /// Creates An Indexed Stack with Slide Up Animation.
   const SlideIndexedStack.up({
     super.key,
     this.children = const [],
@@ -26,6 +28,7 @@ class SlideIndexedStack extends StatefulWidget {
   })  : beginSlideOffset = const Offset(0, 1),
         endSlideOffset = const Offset(0, 0);
 
+  /// Creates An Indexed Stack with Slide Down Animation.
   const SlideIndexedStack.down({
     super.key,
     this.children = const [],
@@ -37,6 +40,8 @@ class SlideIndexedStack extends StatefulWidget {
     this.curve = Curves.easeInOut,
   })  : beginSlideOffset = const Offset(0, -1),
         endSlideOffset = const Offset(0, 0);
+
+  /// Creates An Indexed Stack with Slide Right Animation.
   const SlideIndexedStack.right({
     super.key,
     this.children = const [],
@@ -49,6 +54,7 @@ class SlideIndexedStack extends StatefulWidget {
   })  : beginSlideOffset = const Offset(0, 0),
         endSlideOffset = const Offset(1, 0);
 
+  /// Creates An Indexed Stack with Slide Left Animation.
   const SlideIndexedStack.left({
     super.key,
     this.children = const [],
@@ -61,14 +67,31 @@ class SlideIndexedStack extends StatefulWidget {
   })  : beginSlideOffset = const Offset(0, 0),
         endSlideOffset = const Offset(-1, 0);
 
-  final List<Widget> children;
+  /// the sizing of the children within the IndexedStack.
   final StackFit sizing;
+
+  /// The alignment of the children within the IndexedStack.
   final AlignmentGeometry alignment;
+
+  /// The text direction of the IndexedStack.
   final TextDirection? textDirection;
+
+  /// THe Children Of The IndexedStack
+  final List<Widget> children;
+
+  /// The index of the child to show.
   final int? index;
+
+  /// The animation duration.
   final Duration duration;
+
+  /// The Offset From Where The Animations Starts
   final Offset beginSlideOffset;
+
+  /// The Offset Where The Animations Ends
   final Offset endSlideOffset;
+
+  /// The Animation Curve
   final Curve curve;
   @override
   State<SlideIndexedStack> createState() => SlideIndexedStackState();
