@@ -118,7 +118,9 @@ placeholder
 | `duration` | The Animation duration ( need a hot restart to see changes ) | `Duration` |
 
 <br>
+
 You can also use the built-in `up` , `down` , `right` , `left` directions slide indexed stack:
+
 - ### Slide Up IndexedStack
         SlideIndexedStack.up(
         curve: Curves.easeInOut,
@@ -265,7 +267,7 @@ ShakeIndexedStack(
           Center(
             child: Text("Child 2"),
           ),
-        ],,
+        ],
       ),
 
 ```
