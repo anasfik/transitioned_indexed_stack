@@ -2,8 +2,6 @@
 
 This package aims to help you implement the `IndexedStack` widget for flutter, but with animations.
 
-
-
 # What it offers
 
   - Fade Indexed Stack
@@ -24,6 +22,8 @@ All widgets offered by this package have the same properties as the pre-built Fl
   
   
   # Documentation:
+  <hr>
+  
   ## Fade Indexed Stack
   placeholder
   
@@ -53,7 +53,9 @@ All widgets offered by this package have the same properties as the pre-built Fl
 | `endOpacity` | The End Fade Opacity Animation Value  | `double` |
 | `curve` | The Animation Curve  | `Curve` |
 | `duration` | The Animation duration ( need a hot restart to see changes ) | `Duration` |
-
+  
+  <hr>
+  
 ## Scale Indexed Stack
 placeholder
 ```dart
@@ -83,7 +85,8 @@ placeholder
 | `curve` | The Animation Curve  | `Curve` |
 | `duration` | The Animation duration ( need a hot restart to see changes ) | `Duration` |
 
-
+  <hr>
+  
 ## Slide Indexed Stack
 placeholder
 ```dart
@@ -178,7 +181,8 @@ You can also use the built-in `up` , `down` , `right` , `left` directions slide 
         ],
       ),
       
-
+<hr>
+ 
 ## Size Factor Indexed Stack
 placeholder
 ```dart
@@ -208,7 +212,8 @@ placeholder
 | `curve` | The Animation Curve  | `Curve` |
 | `duration` | The Animation duration ( need a hot restart to see changes ) | `Duration` |
 
-
+  <hr>
+  
 ## Size Factor Indexed Stack
 placeholder
 ```dart
@@ -238,7 +243,9 @@ placeholder
 | `endTurn` | The End Rotation Turn Animation Value | `double` |
 | `curve` | The Animation Curve  | `Curve` |
 | `duration` | The Animation duration ( need a hot restart to see changes ) | `Duration` |
-
+  
+  <hr>
+  
 ## Size Factor Indexed Stack
 placeholder
 
