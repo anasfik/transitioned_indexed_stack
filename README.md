@@ -1,4 +1,5 @@
-Animated Indexed Stack
+# Animated Indexed Stack
+
 This package aims to help you implement the `IndexedStack` widget for flutter, but with animations.
 
 
