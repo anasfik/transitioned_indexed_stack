@@ -214,8 +214,10 @@ placeholder
 
   <hr>
   
-## Size Factor Indexed Stack
+  
+## Rotation Indexed Stack
 placeholder
+
 ```dart
   RotationIndexedStack(
         beginTurn: 0.0,
@@ -243,18 +245,17 @@ placeholder
 | `endTurn` | The End Rotation Turn Animation Value | `double` |
 | `curve` | The Animation Curve  | `Curve` |
 | `duration` | The Animation duration ( need a hot restart to see changes ) | `Duration` |
-  
   <hr>
   
-## Size Factor Indexed Stack
+## Shake Indexed Stack
 placeholder
 
 ```dart
-  RotationIndexedStack(
-        beginTurn: 0.0,
-        endTurn: 1.0,
-        curve: Curves.easeInOut,
+ShakeIndexedStack(
+        shakesCount: 100,
+        shakeFrequency: 0.04,
         duration: const Duration(milliseconds: 250),
+        curve: Curves.slowMiddle,
         index: 1,
         children: const <Widget>[
           Center(
@@ -263,7 +264,7 @@ placeholder
           Center(
             child: Text("Child 2"),
           ),
-        ],
+        ],,
       ),
 
 ```
@@ -272,7 +273,7 @@ placeholder
 
 | property | Description | type |
 | --- | --- | --- |
-| `beginTurn` | The Initial Rotation Turn Animation Value | `double` |
-| `endTurn` | The End Rotation Turn Animation Value | `double` |
+| `shakesCount` | This represent how much times a shake should be triggered during the animation  | `double` |
+| `shakeFrequency` | THis represents the shake frequency | `double` |
 | `curve` | The Animation Curve  | `Curve` |
 | `duration` | The Animation duration ( need a hot restart to see changes ) | `Duration` |
