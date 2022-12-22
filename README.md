@@ -4,61 +4,72 @@ This Package helps You Making Animated Transitions between IndexedStack children
 
 # What it offers
 
-  - Fade Indexed Stack
-  - Scale Indexed Stack
-  - Slide Indexed Stack
-    - Slide Up IndexedStack
-    - Slide Down IndexedStack
-    - Slide Right IndexedStack
-    - Slide Left IndexedStack
-  - Size Factor Indexed Stack
-  - Rotation Indexed Stack
-  - Diagonal Indexed Stack
-  - Shake Indexed Stack
+- Fade Indexed Stack
+- Scale Indexed Stack
+- Slide Indexed Stack
+  - Slide Up IndexedStack
+  - Slide Down IndexedStack
+  - Slide Right IndexedStack
+  - Slide Left IndexedStack
+- Size Factor Indexed Stack
+- Rotation Indexed Stack
+- Diagonal Indexed Stack
+- Shake Indexed Stack
 
 All widgets offered by this package have the same properties as the pre-built Flutter `IndexedStack` widget, in addition of some useful properties which control the animations.
-  
-  # Demo App
- <a href="">Download Here</a>
-  
-  
-  # Documentation:
+
+# Demo App
+
+<a href="">Download Here</a>
+
   <hr>
-  
-  ## Fade Indexed Stack
-  placeholder
-  
-  ``` dart
-    FadeIndexedStack(
-        beginOpacity: 0.0,
-        endOpacity: 1.0,
-        curve: Curves.easeInOut,
-        duration: const Duration(milliseconds: 250),
-        index: 1,
-        children: const <Widget>[
-          Center(
-            child: Text("Child 1"),
-          ),
-          Center(
-            child: Text("Child 2"),
-          ),
-        ],
-      ),
-  ```
+ 
+# Usage:
+
+## Fade Indexed Stack
+
+### Showcase :
+
+  <p align="center"><img  height='560' src="assets/gifs/fade.gif" /></p>
+    
+   ### Code :
+
+```dart
+  FadeIndexedStack(
+      beginOpacity: 0.0,
+      endOpacity: 1.0,
+      curve: Curves.easeInOut,
+      duration: const Duration(milliseconds: 250),
+      index: 1,
+      children: const <Widget>[
+        Center(
+          child: Text("Child 1"),
+        ),
+        Center(
+          child: Text("Child 2"),
+        ),
+      ],
+    ),
+```
 
 #### Properties
 
-| property | Description | type |
-| --- | --- | --- |
-| `beginOpacity` | The Initial Fade Opacity Animation Value  | `double` |
-| `endOpacity` | The End Fade Opacity Animation Value  | `double` |
-| `curve` | The Animation Curve  | `Curve` |
-| `duration` | The Animation duration ( need a hot restart to see changes ) | `Duration` |
-  
+| property       | Description                                                  | type       |
+| -------------- | ------------------------------------------------------------ | ---------- |
+| `beginOpacity` | The Initial Fade Opacity Animation Value                     | `double`   |
+| `endOpacity`   | The End Fade Opacity Animation Value                         | `double`   |
+| `curve`        | The Animation Curve                                          | `Curve`    |
+| `duration`     | The Animation duration ( need a hot restart to see changes ) | `Duration` |
+
   <hr>
   
 ## Scale Indexed Stack
-placeholder
+  ### Showcase :
+
+  <p align="center"><img  height='560' src="assets/gifs/scale.gif" /></p>
+  
+ ### Code :
+
 ```dart
   ScaleIndexedStack(
         beginScale: 0.0,
@@ -79,17 +90,22 @@ placeholder
 
 #### Properties
 
-| property | Description | type |
-| --- | --- | --- |
-| `beginScale` | The Initial Scale Animation Value  | `double` |
-| `endScale` | The End Scale Animation Value  | `double` |
-| `curve` | The Animation Curve  | `Curve` |
-| `duration` | The Animation duration ( need a hot restart to see changes ) | `Duration` |
+| property     | Description                                                  | type       |
+| ------------ | ------------------------------------------------------------ | ---------- |
+| `beginScale` | The Initial Scale Animation Value                            | `double`   |
+| `endScale`   | The End Scale Animation Value                                | `double`   |
+| `curve`      | The Animation Curve                                          | `Curve`    |
+| `duration`   | The Animation duration ( need a hot restart to see changes ) | `Duration` |
 
   <hr>
   
 ## Slide Indexed Stack
-placeholder
+  ### Showcase :
+
+  <p align="center"><img  height='560' src="assets/gifs/slide.gif" /></p>
+
+### Code :
+
 ```dart
   SlideIndexedStack(
         endSlideOffset: const Offset(0.5, 1),
@@ -110,84 +126,22 @@ placeholder
 
 #### Properties
 
-| property | Description | type |
-| --- | --- | --- |
-| `endSlideOffset` | The Offset From Where The Animations Starts  | `Offset` |
-| `beginSlideOffset` | The Offset From Where The Animations Ends  | `Offset` |
-| `curve` | The Animation Curve  | `Curve` |
-| `duration` | The Animation duration ( need a hot restart to see changes ) | `Duration` |
+| property           | Description                                                  | type       |
+| ------------------ | ------------------------------------------------------------ | ---------- |
+| `endSlideOffset`   | The Offset From Where The Animations Starts                  | `Offset`   |
+| `beginSlideOffset` | The Offset From Where The Animations Ends                    | `Offset`   |
+| `curve`            | The Animation Curve                                          | `Curve`    |
+| `duration`         | The Animation duration ( need a hot restart to see changes ) | `Duration` |
 
-<br>
-
-You can also use the built-in `up` , `down` , `right` , `left` directions slide indexed stack:
-
-- ### Slide Up IndexedStack
-        SlideIndexedStack.up(
-        curve: Curves.easeInOut,
-        duration: const Duration(milliseconds: 250),
-        index: 1,
-        children: const <Widget>[
-          Center(
-            child: Text("Child 1"),
-          ),
-          Center(
-            child: Text("Child 2"),
-          ),
-        ],
-      ), 
-      
-- ### Slide Down IndexedStack
-    
-      SlideIndexedStack.down(
-        curve: Curves.easeInOut,
-        duration: const Duration(milliseconds: 250),
-        index: 1,
-        children: const <Widget>[
-          Center(
-            child: Text("Child 1"),
-          ),
-          Center(
-            child: Text("Child 2"),
-          ),
-        ],
-      ),
-      
-- ### Slide Right IndexedStack
-    
-      SlideIndexedStack.right(
-        curve: Curves.easeInOut,
-        duration: const Duration(milliseconds: 250),
-        index: 1,
-        children: const <Widget>[
-          Center(
-            child: Text("Child 1"),
-          ),
-          Center(
-            child: Text("Child 2"),
-          ),
-        ],
-      ),
-      
-- ### Slide Left IndexedStack
-    
-      SlideIndexedStack.left(
-        curve: Curves.easeInOut,
-        duration: const Duration(milliseconds: 250),
-        index: 1,
-        children: const <Widget>[
-          Center(
-            child: Text("Child 1"),
-          ),
-          Center(
-            child: Text("Child 2"),
-          ),
-        ],
-      ),
-      
 <hr>
  
 ## Size Factor Indexed Stack
-placeholder
+  ### Showcase :
+
+  <p align="center"><img  height='560' src="assets/gifs/size_factor.gif" /></p>
+  
+### Code :
+
 ```dart
    SizeFactorIndexedStack(
         beginSizeFactor: 0.0,
@@ -208,19 +162,24 @@ placeholder
 
 #### Properties
 
-| property | Description | type |
-| --- | --- | --- |
-| `beginSizeFactor` | The Initial Size Factor Animation Value  | `double` |
-| `endSizeFactor` | The End Size Factor Animation Value  | `double` |
-| `curve` | The Animation Curve  | `Curve` |
-| `duration` | The Animation duration ( need a hot restart to see changes ) | `Duration` |
+| property          | Description                                                  | type       |
+| ----------------- | ------------------------------------------------------------ | ---------- |
+| `beginSizeFactor` | The Initial Size Factor Animation Value                      | `double`   |
+| `endSizeFactor`   | The End Size Factor Animation Value                          | `double`   |
+| `curve`           | The Animation Curve                                          | `Curve`    |
+| `duration`        | The Animation duration ( need a hot restart to see changes ) | `Duration` |
 
   <hr>
   
   
 ## Rotation Indexed Stack
-placeholder
 
+### Showcase :
+
+  <p align="center"><img  height='560' src="assets/gifs/rotation.gif" /></p>
+  
+  
+### Code :
 ```dart
   RotationIndexedStack(
         beginTurn: 0.0,
@@ -238,20 +197,26 @@ placeholder
         ],
       ),
 
-```
+````
 
 #### Properties
 
-| property | Description | type |
-| --- | --- | --- |
-| `beginTurn` | The Initial Rotation Turn Animation Value | `double` |
-| `endTurn` | The End Rotation Turn Animation Value | `double` |
-| `curve` | The Animation Curve  | `Curve` |
-| `duration` | The Animation duration ( need a hot restart to see changes ) | `Duration` |
+| property    | Description                                                  | type       |
+| ----------- | ------------------------------------------------------------ | ---------- |
+| `beginTurn` | The Initial Rotation Turn Animation Value                    | `double`   |
+| `endTurn`   | The End Rotation Turn Animation Value                        | `double`   |
+| `curve`     | The Animation Curve                                          | `Curve`    |
+| `duration`  | The Animation duration ( need a hot restart to see changes ) | `Duration` |
+
   <hr>
-  
+
 ## Shake Indexed Stack
-placeholder
+  ### Showcase :
+
+  <p align="center"><img  height='560' src="assets/gifs/shake.gif" /></p>
+
+
+### Code :
 
 ```dart
 ShakeIndexedStack(
@@ -270,13 +235,13 @@ ShakeIndexedStack(
         ],
       ),
 
-```
+````
 
 #### Properties
 
-| property | Description | type |
-| --- | --- | --- |
-| `shakesCount` | This represent how much times a shake should be triggered during the animation  | `double` |
-| `shakeFrequency` | THis represents the shake frequency | `double` |
-| `curve` | The Animation Curve  | `Curve` |
-| `duration` | The Animation duration ( need a hot restart to see changes ) | `Duration` |
+| property         | Description                                                                    | type       |
+| ---------------- | ------------------------------------------------------------------------------ | ---------- |
+| `shakesCount`    | This represent how much times a shake should be triggered during the animation | `double`   |
+| `shakeFrequency` | THis represents the shake frequency                                            | `double`   |
+| `curve`          | The Animation Curve                                                            | `Curve`    |
+| `duration`       | The Animation duration ( need a hot restart to see changes )                   | `Duration` |

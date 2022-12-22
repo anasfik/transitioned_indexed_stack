@@ -1,6 +1,7 @@
-import 'package:animated_indexed_stack/animated_indexed_stack.dart';
 import 'package:flutter/animation.dart';
 import 'package:flutter/cupertino.dart';
+
+import '../../transitioned_indexed_stack.dart';
 
 class DiagonalIndexedStack extends SlideIndexedStack {
   /// Cannot be used directly.
