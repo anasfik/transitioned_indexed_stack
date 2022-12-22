@@ -4,9 +4,6 @@ import 'package:flutter/cupertino.dart';
 import '../../transitioned_indexed_stack.dart';
 
 class DiagonalIndexedStack extends SlideIndexedStack {
-  /// Cannot be used directly.
-  const DiagonalIndexedStack._();
-
   /// Creates An Indexed Stack with Diagonal Slide Animation from the top left.
   const DiagonalIndexedStack.topLeft({
     super.key,
