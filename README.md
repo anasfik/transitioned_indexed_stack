@@ -1,6 +1,6 @@
-# Animated Indexed Stack
+# Transitioned Indexed Stack
 
-This package aims to help you implement the `IndexedStack` widget for flutter, but with animations.
+This Package helps You Making Animated Transitions between IndexedStack children widgets Easily.
 
 # What it offers
 
