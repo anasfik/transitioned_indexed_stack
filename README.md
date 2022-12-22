@@ -1,39 +1,282 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Transitioned Indexed Stack
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+This Package helps You Making Animated Transitions between IndexedStack children widgets Easily.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+# What it offers
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+  - Fade Indexed Stack
+  - Scale Indexed Stack
+  - Slide Indexed Stack
+    - Slide Up IndexedStack
+    - Slide Down IndexedStack
+    - Slide Right IndexedStack
+    - Slide Left IndexedStack
+  - Size Factor Indexed Stack
+  - Rotation Indexed Stack
+  - Diagonal Indexed Stack
+  - Shake Indexed Stack
 
-## Features
+All widgets offered by this package have the same properties as the pre-built Flutter `IndexedStack` widget, in addition of some useful properties which control the animations.
+  
+  # Demo App
+ <a href="">Download Here</a>
+  
+  
+  # Documentation:
+  <hr>
+  
+  ## Fade Indexed Stack
+  placeholder
+  
+  ``` dart
+    FadeIndexedStack(
+        beginOpacity: 0.0,
+        endOpacity: 1.0,
+        curve: Curves.easeInOut,
+        duration: const Duration(milliseconds: 250),
+        index: 1,
+        children: const <Widget>[
+          Center(
+            child: Text("Child 1"),
+          ),
+          Center(
+            child: Text("Child 2"),
+          ),
+        ],
+      ),
+  ```
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+#### Properties
 
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
+| property | Description | type |
+| --- | --- | --- |
+| `beginOpacity` | The Initial Fade Opacity Animation Value  | `double` |
+| `endOpacity` | The End Fade Opacity Animation Value  | `double` |
+| `curve` | The Animation Curve  | `Curve` |
+| `duration` | The Animation duration ( need a hot restart to see changes ) | `Duration` |
+  
+  <hr>
+  
+## Scale Indexed Stack
+placeholder
 ```dart
-const like = 'sample';
+  ScaleIndexedStack(
+        beginScale: 0.0,
+        endScale: 1.0,
+        curve: Curves.easeInOut,
+        duration: const Duration(milliseconds: 250),
+        index: 1,
+        children: const <Widget>[
+          Center(
+            child: Text("Child 1"),
+          ),
+          Center(
+            child: Text("Child 2"),
+          ),
+        ],
+      ),
 ```
 
-## Additional information
+#### Properties
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+| property | Description | type |
+| --- | --- | --- |
+| `beginScale` | The Initial Scale Animation Value  | `double` |
+| `endScale` | The End Scale Animation Value  | `double` |
+| `curve` | The Animation Curve  | `Curve` |
+| `duration` | The Animation duration ( need a hot restart to see changes ) | `Duration` |
+
+  <hr>
+  
+## Slide Indexed Stack
+placeholder
+```dart
+  SlideIndexedStack(
+        endSlideOffset: const Offset(0.5, 1),
+        beginSlideOffset: const Offset(0.0, 0.0),
+        curve: Curves.easeInOut,
+        duration: const Duration(milliseconds: 250),
+        index: 1,
+        children: const <Widget>[
+          Center(
+            child: Text("Child 1"),
+          ),
+          Center(
+            child: Text("Child 2"),
+          ),
+        ],
+      ),
+```
+
+#### Properties
+
+| property | Description | type |
+| --- | --- | --- |
+| `endSlideOffset` | The Offset From Where The Animations Starts  | `Offset` |
+| `beginSlideOffset` | The Offset From Where The Animations Ends  | `Offset` |
+| `curve` | The Animation Curve  | `Curve` |
+| `duration` | The Animation duration ( need a hot restart to see changes ) | `Duration` |
+
+<br>
+
+You can also use the built-in `up` , `down` , `right` , `left` directions slide indexed stack:
+
+- ### Slide Up IndexedStack
+        SlideIndexedStack.up(
+        curve: Curves.easeInOut,
+        duration: const Duration(milliseconds: 250),
+        index: 1,
+        children: const <Widget>[
+          Center(
+            child: Text("Child 1"),
+          ),
+          Center(
+            child: Text("Child 2"),
+          ),
+        ],
+      ), 
+      
+- ### Slide Down IndexedStack
+    
+      SlideIndexedStack.down(
+        curve: Curves.easeInOut,
+        duration: const Duration(milliseconds: 250),
+        index: 1,
+        children: const <Widget>[
+          Center(
+            child: Text("Child 1"),
+          ),
+          Center(
+            child: Text("Child 2"),
+          ),
+        ],
+      ),
+      
+- ### Slide Right IndexedStack
+    
+      SlideIndexedStack.right(
+        curve: Curves.easeInOut,
+        duration: const Duration(milliseconds: 250),
+        index: 1,
+        children: const <Widget>[
+          Center(
+            child: Text("Child 1"),
+          ),
+          Center(
+            child: Text("Child 2"),
+          ),
+        ],
+      ),
+      
+- ### Slide Left IndexedStack
+    
+      SlideIndexedStack.left(
+        curve: Curves.easeInOut,
+        duration: const Duration(milliseconds: 250),
+        index: 1,
+        children: const <Widget>[
+          Center(
+            child: Text("Child 1"),
+          ),
+          Center(
+            child: Text("Child 2"),
+          ),
+        ],
+      ),
+      
+<hr>
+ 
+## Size Factor Indexed Stack
+placeholder
+```dart
+   SizeFactorIndexedStack(
+        beginSizeFactor: 0.0,
+        endSizeFactor: 1.0,
+        curve: Curves.easeInOut,
+        duration: const Duration(milliseconds: 250),
+        index: 1,
+        children: const <Widget>[
+          Center(
+            child: Text("Child 1"),
+          ),
+          Center(
+            child: Text("Child 2"),
+          ),
+        ],
+      ),
+```
+
+#### Properties
+
+| property | Description | type |
+| --- | --- | --- |
+| `beginSizeFactor` | The Initial Size Factor Animation Value  | `double` |
+| `endSizeFactor` | The End Size Factor Animation Value  | `double` |
+| `curve` | The Animation Curve  | `Curve` |
+| `duration` | The Animation duration ( need a hot restart to see changes ) | `Duration` |
+
+  <hr>
+  
+  
+## Rotation Indexed Stack
+placeholder
+
+```dart
+  RotationIndexedStack(
+        beginTurn: 0.0,
+        endTurn: 1.0,
+        curve: Curves.easeInOut,
+        duration: const Duration(milliseconds: 250),
+        index: 1,
+        children: const <Widget>[
+          Center(
+            child: Text("Child 1"),
+          ),
+          Center(
+            child: Text("Child 2"),
+          ),
+        ],
+      ),
+
+```
+
+#### Properties
+
+| property | Description | type |
+| --- | --- | --- |
+| `beginTurn` | The Initial Rotation Turn Animation Value | `double` |
+| `endTurn` | The End Rotation Turn Animation Value | `double` |
+| `curve` | The Animation Curve  | `Curve` |
+| `duration` | The Animation duration ( need a hot restart to see changes ) | `Duration` |
+  <hr>
+  
+## Shake Indexed Stack
+placeholder
+
+```dart
+ShakeIndexedStack(
+        shakesCount: 100,
+        shakeFrequency: 0.04,
+        duration: const Duration(milliseconds: 250),
+        curve: Curves.slowMiddle,
+        index: 1,
+        children: const <Widget>[
+          Center(
+            child: Text("Child 1"),
+          ),
+          Center(
+            child: Text("Child 2"),
+          ),
+        ],
+      ),
+
+```
+
+#### Properties
+
+| property | Description | type |
+| --- | --- | --- |
+| `shakesCount` | This represent how much times a shake should be triggered during the animation  | `double` |
+| `shakeFrequency` | THis represents the shake frequency | `double` |
+| `curve` | The Animation Curve  | `Curve` |
+| `duration` | The Animation duration ( need a hot restart to see changes ) | `Duration` |
