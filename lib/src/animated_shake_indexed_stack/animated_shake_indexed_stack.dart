@@ -93,7 +93,11 @@ class ShakeIndexedStackState extends State<ShakeIndexedStack>
     final didIndexChanged = oldWidget.index != widget.index;
     final didFrequencyChanged =
         oldWidget.shakeFrequency != widget.shakeFrequency;
-    if (didCurveChanged || didIndexChanged || didFrequencyChanged) {
+    final didShakesCountChanged = oldWidget.shakesCount != widget.shakesCount;
+    if (didCurveChanged ||
+        didIndexChanged ||
+        didFrequencyChanged ||
+        didShakesCountChanged) {
       isEnd = false;
       index = 0;
       scale = _createScaleTween();
