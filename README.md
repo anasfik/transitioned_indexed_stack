@@ -30,7 +30,7 @@ All widgets offered by this package have the same properties as the pre-built Fl
 
 ### Showcase :
 
-  <p align="center"><img  height='560' src="assets/gifs/fade.gif" /></p>
+  <p align="center"><img  height='560' src="https://imgur.com/7Z6mler.gif" /></p>
     
    ### Code :
 
@@ -65,8 +65,7 @@ All widgets offered by this package have the same properties as the pre-built Fl
   
 ## Scale Indexed Stack
   ### Showcase :
-
-  <p align="center"><img  height='560' src="assets/gifs/scale.gif" /></p>
+  <p align="center"><img  height='560' src="https://imgur.com/sTLCdoh.gif" /></p>
   
  ### Code :
 
@@ -102,7 +101,7 @@ All widgets offered by this package have the same properties as the pre-built Fl
 ## Slide Indexed Stack
   ### Showcase :
 
-  <p align="center"><img  height='560' src="assets/gifs/slide.gif" /></p>
+  <p align="center"><img  height='560' src="https://imgur.com/YBeKTD2.gif" /></p>
 
 ### Code :
 
@@ -138,7 +137,7 @@ All widgets offered by this package have the same properties as the pre-built Fl
 ## Size Factor Indexed Stack
   ### Showcase :
 
-  <p align="center"><img  height='560' src="assets/gifs/size_factor.gif" /></p>
+  <p align="center"><img  height='560' src="https://i.imgur.com/0X2ZVNS.gif.gif" /></p>
   
 ### Code :
 
@@ -176,7 +175,7 @@ All widgets offered by this package have the same properties as the pre-built Fl
 
 ### Showcase :
 
-  <p align="center"><img  height='560' src="assets/gifs/rotation.gif" /></p>
+  <p align="center"><img  height='560' src="https://imgur.com/TvErp1y.gif" /></p>
   
   
 ### Code :
@@ -213,7 +212,8 @@ All widgets offered by this package have the same properties as the pre-built Fl
 ## Shake Indexed Stack
   ### Showcase :
 
-  <p align="center"><img  height='560' src="assets/gifs/shake.gif" /></p>
+
+<p align="center"><img  height='560' src="https://imgur.com/FFeqDCI.gif" /></p>
 
 
 ### Code :

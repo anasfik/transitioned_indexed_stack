@@ -1,6 +1,6 @@
 name: transitioned_indexed_stack
 description: This Package helps You Making Animated Transitions between IndexedStack children widgets Easily.
-version: 1.0.0
+version: 1.0.2
 homepage: https://github.com/anasfik/transitioned_indexed_stack
 repository: https://github.com/anasfik/transitioned_indexed_stack
 documentation: https://github.com/anasfik/transitioned_indexed_stack
