@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import 'diagonal_animated_indexed_stack/diagonal_animated_indexed_stack.dart';
 import 'fade_animated_indexed_stack/fade_animated_indexed_stack.dart';
+import 'flip_animated_indexed_stack/flip_animated_indexed_stack.dart';
 import 'rotation_animated_indexed_stack/rotation_animated_indexed_stack.dart';
 import 'scale_animated_indexed_stack/scale_animated_indexed_stack.dart';
 import 'size_factor_animated_indexed_stack/size_factor_animated_indexed_stack.dart';
@@ -26,6 +27,7 @@ class _ExamplePageState extends State<ExamplePage> {
     const RotationTransitionedIndexedStackScreen(),
     const DiagonalTransitionedIndexedStackScreen(),
     const ShakeTransitionedIndexedStackScreen(),
+    const FlipTransitionedIndexedStackScreen(),
   ];
   late Widget currentScreen = screensExample.first;
 

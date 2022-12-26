@@ -7,3 +7,4 @@ export 'src/animated_size_factor_indexed_stack/animated_size_factor_indexed_stac
 export 'src/animated_rotation_indexed_stack/animated_rotation_indexed_stack.dart';
 export 'src/animated_diagonal_indexed_stack/animated_diagonal_indexed_stack.dart';
 export 'src/animated_shake_indexed_stack/animated_shake_indexed_stack.dart';
+export 'src/animated_flip_indexed_stack/animated_flip_indexed_stack.dart';
